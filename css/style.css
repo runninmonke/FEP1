@@ -21,13 +21,23 @@ body {
 	max-width: none;
 	position: relative;
 	left: calc((1140px - 100%)/-2);
-	border: 5px solid #FFF;
 }
 
 .img-detail {
+	position: relative;
 	max-width: none;
-	left: -5px;
+	bottom: 101px;
+	width: 100%;
+	min-height: 485px;
+	min-width: 633px;
+}
+
+.display {
 	border: 5px solid #FFF;
+	height: 485px;
+	width: calc(100% - 10px);
+	overflow: hidden;
+	margin: 0 auto;
 }
 
 .projects img {
@@ -40,16 +50,9 @@ body {
 }
 
 .txt-detail {
-	position: absolute;
-	top: 500px;
-	-moz-background-clip: padding;
- 	-webkit-background-clip: padding;
-  	background-clip: padding-box; 
-	border: 5px solid rgba(0, 0, 0, 0);
-	border-right-style: hidden;
-	margin: 0 auto;
-	width: 1145px;
-	max-width: 100%;
+	position: relative;
+	top: 389px;
+	width: 100%;
 	height: 91px;
 	background-color: #000;
 	z-index: 1;
