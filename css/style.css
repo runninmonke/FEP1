@@ -17,16 +17,12 @@ body {
 	max-width: none;
 	position: relative;
 	left: calc((1140px - 100%)/-2);
-	border-style: solid;
-	border: 15px;
-	border-spacing: 15px;
-	border-color: #FFF;
+	border: 5px solid #FFF;
 }
 
 .img-detail {
 	max-width: none;
-	position: left;
-	position: -5px;
+	left: -5px;
 }
 
 .logo {
