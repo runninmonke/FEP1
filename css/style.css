@@ -1,0 +1,43 @@
+img, embed, object, video {
+    max-width: 100%;
+}
+
+nav a, button{
+    min-width: 48px;
+    min-height: 48px;
+}
+body {
+	overflow-x: hidden;
+	color: #FFF;
+	background-color: black;
+}
+.img-main {
+	overflow: hidden;
+	float:left;
+	max-width: none;
+	position: relative;
+	left: calc((1140px - 100%)/-2);
+	border-style: solid;
+	border: 15px;
+	border-spacing: 15px;
+	border-color: #FFF;
+}
+
+.img-detail {
+	max-width: none;
+	position: left;
+	position: -5px;
+}
+
+.logo {
+	border-radius: 50%;
+	position: absolute;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 16px;
+}
