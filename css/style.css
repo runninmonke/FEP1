@@ -25,6 +25,10 @@ body {
 	left: -5px;
 }
 
+.img-project {
+	border: 3px solid #FFF;
+}
+
 .logo {
 	border-radius: 50%;
 	position: absolute;
