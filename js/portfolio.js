@@ -11,8 +11,9 @@ var projectClick = function(evt) {
 };
 
 var changeImg = function(evt) {
-	imgLg = evt.target.currentSrc.slice(0,-4) + "-lg" + evt.target.currentSrc.slice(-4);
-	$('.display img').attr({"src": imgLg, "class": "img-detail"});
+	var imgLg = evt.target.currentSrc.slice(0,-4) + "-lg" + evt.target.currentSrc.slice(-4);
+	var imgSm = evt.target.currentSrc.slice(0,-4) + "-sm" + evt.target.currentSrc.slice(-4);
+	$('.display img').attr({"src": imgLg, "class": "img-detail", "srcset": imgSm + " 500w, " + imgLg + " 1140w", "sizes": "100vw"});
 };
 
 var displayDescription = function(evt) {
