@@ -1,12 +1,29 @@
 body {
 	overflow-x: hidden;
-	color: #FFF;
-	background-color: black;
+	color: #fff;
+	background: black;
 }
 
+/* site wrapper to make sure overflow is hidden on mobile */
 .site {
 	overflow-x: hidden;
 }
+
+.logo {
+	border-radius: 50%;
+	position: absolute;
+}
+
+/* setup main image display container */
+.display {
+	border: 5px solid #fff;
+	height: 484px;
+	width: calc(100% - 10px);
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+/* Make main image stay positioned correctly regardless of screensize */
 .img-main {
 	float:left;
 	max-width: none;
@@ -14,6 +31,7 @@ body {
 	left: calc((1140px - 100%)/-2);
 }
 
+/* Position project detail image in display container */
 .img-detail {
 	position: relative;
 	max-width: none;
@@ -23,23 +41,7 @@ body {
 	min-width: 633px;
 }
 
-.display {
-	border: 5px solid #FFF;
-	height: 484px;
-	width: calc(100% - 10px);
-	overflow: hidden;
-	margin: 0 auto;
-}
-
-.projects img {
-	border: 3px solid #FFF;
-}
-
-.logo {
-	border-radius: 50%;
-	position: absolute;
-}
-
+/* style and position product desciption text box in display container */
 .txt-detail {
 	position: relative;
 	top: 389px;
@@ -48,6 +50,10 @@ body {
 	background-color: #151515;
 	z-index: 1;
 	padding: 10px;
+}
+
+.projects img {
+	border: 3px solid #fff;
 }
 
 h1 {
