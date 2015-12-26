@@ -1,9 +1,21 @@
 $(function() {
 	//Project description data
-	var messages = {
-		proj1: "This is my first ever project. I built it with some images I had laying around and it's the website you are on right now.",
-		proj2: "The next project is to build a resume website.",
-		proj3: "Eventually I'm going to build a game similar to the arcade classic, Frogger."
+	var projects = {
+		proj1: {
+			message: "This is my first ever project. I built it with some images I had laying around and it's the website you are on right now. It's responsive to different display sizes",
+			srcset: 'imgs/proj-1-sm.jpg 600w, imgs/proj-1-lg.jpg 1140w',
+			class: 'img-detail'
+		},
+		proj2: {
+			message: 'An arcade game similar to Frogger. Built by implementing psuedo-classical object-oriented programming patterns. The image assets and game engine were provided by Udacity.',
+			srcset: '',
+			class: 'img-detail centered'
+		},
+		proj3: {
+		message: 'Neighborhood map application built with the Google Maps API. Utilizes other APIs for additional meteological and astronomical data.',
+		srcset: 'imgs/proj-3-sm.jpg 600w, imgs/proj-3-lg.jpg 1140w',
+		class: 'img-detail'
+		}
 	}
 
 	//Make clicks on project display it in the main picture area
@@ -15,15 +27,15 @@ $(function() {
 
 	//Change image in main picture area to project's screenshot
 	var changeImg = function(evt) {
-		var imgLg = evt.target.currentSrc.slice(0,-4) + "-lg" + evt.target.currentSrc.slice(-4);
-		var imgSm = evt.target.currentSrc.slice(0,-4) + "-sm" + evt.target.currentSrc.slice(-4);
-		$('.display img').attr({"src": imgLg, "class": "img-detail", "srcset": imgSm + " 500w, " + imgLg + " 1140w", "sizes": "100vw", "alt": "Enlargement of project screenshot"});
+		var projName = evt.target.parentElement.id;
+		var imgLg = evt.target.currentSrc.slice(0,-4) + '-lg' + evt.target.currentSrc.slice(-4);
+		$('.display img').attr({'src': imgLg, 'class': projects[projName].class, 'srcset': projects[projName].srcset, 'sizes': '100vw', 'alt': 'Enlargement of project screenshot'});
 	};
 
 	//Display project discription
 	var displayDescription = function(evt) {
-		$('.display p').attr("class", "txt-detail");
-		$('.display p').html(messages[evt.target.parentElement.id]);
+		$('.display p').attr('class', 'txt-detail');
+		$('.display p').html(projects[evt.target.parentElement.id].message);
 	};
 
 	//Listen for project image clicks

@@ -1,7 +1,7 @@
 body {
 	overflow-x: hidden;
-	color: #fff;
-	background: black;
+	color: green;
+	background: white;
 }
 
 /* site wrapper to make sure overflow is hidden on mobile */
@@ -16,7 +16,7 @@ body {
 
 /* setup main image display container */
 .display {
-	border: 5px solid #fff;
+	border: 5px solid #1f7a1f;
 	height: 484px;
 	width: calc(100% - 10px);
 	overflow: hidden;
@@ -41,6 +41,14 @@ body {
 	min-width: 633px;
 }
 
+.centered {
+	float: left;
+	left: calc((1140px - 100%)/-2);
+	width: auto;
+	min-width: 0px;
+	min-height: 0px;
+}
+
 /* style and position product desciption text box in display container */
 .txt-detail {
 	position: relative;
@@ -50,6 +58,7 @@ body {
 	background-color: #151515;
 	z-index: 1;
 	padding: 10px;
+	color: white;
 }
 
 .projects img {
