@@ -16,7 +16,7 @@ body {
 
 /* setup main image display container */
 .display {
-	border: 5px solid #1f7a1f;
+	border: 5px solid #206020;
 	height: 484px;
 	width: calc(100% - 10px);
 	overflow: hidden;
@@ -55,7 +55,7 @@ body {
 	top: 389px;
 	width: 100%;
 	height: 91px;
-	background-color: #151515;
+	background-color: #206020;
 	z-index: 1;
 	padding: 10px;
 	color: white;
