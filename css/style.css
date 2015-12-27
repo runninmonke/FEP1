@@ -23,6 +23,10 @@ body {
 	margin: 0 auto;
 }
 
+.projects img {
+	cursor: pointer;
+}
+
 /* Make main image stay positioned correctly regardless of screensize */
 .img-main {
 	float:left;
