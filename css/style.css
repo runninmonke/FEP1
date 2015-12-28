@@ -63,6 +63,7 @@ body {
 	z-index: 1;
 	padding: 10px;
 	color: white;
+	overflow-y: auto;
 }
 
 .projects img {
